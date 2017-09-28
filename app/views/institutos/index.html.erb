@@ -1,0 +1,12 @@
+Lista de Institutos:
+<% if not @institutos.nil? %>
+  <ul>
+  <% @institutos.each do |i| %>
+    <li><%= link_to i.nome, i %></li>
+  <% end %>
+  </ul>
+<% end %>
+
+<hr>
+
+<%= link_to 'Novo Instituto', new_instituto_path %>

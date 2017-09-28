@@ -1,0 +1,7 @@
+<h1>Bem vindo ao <%= @instituto.nome %> (<%= @instituto.sigla %>) </h1>
+<p><%= @instituto.descricao %></p>
+
+<hr />
+<p><%= link_to 'Edit', edit_instituto_path(@instituto) %></p>
+<p><%= link_to 'Delete', delete_instituto_path(@instituto), method: :delete %></p>
+<p><%= link_to 'Ver tudo', '/institutos' %></p>
