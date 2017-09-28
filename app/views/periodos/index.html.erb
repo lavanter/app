@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Listando todos os Periodos</h1>
+  <ul>
+    <% @periodos.each do |p| %>
+    <li>
+      <%= link_to p.nome, p %> | 
+      (<%= link_to 'Editar', edit_periodo_path(p) %>) | 
+      (<%= link_to 'Apagar', delete_periodo_path(p), method: :delete %>)
+    </li>
+    <% end %>
+  <ul>
+</div>

@@ -1,0 +1,13 @@
+<%= form_for (@periodo) do |f| %>
+<div class="form">
+  <%= f.label :sigla %>
+  <%= f.text_field :sigla %>
+</div>
+<div class="form">
+  <%= f.label :nome %>
+  <%= f.text_field :nome %>
+</div>
+<div class="form">
+  <%= f.submit %>
+</div>
+<% end %>
