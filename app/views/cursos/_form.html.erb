@@ -1,0 +1,21 @@
+<%= form_for(@curso) do |f|  %>
+<div class="field">
+  <%= f.label :institutos %>
+  <%= f.select :instituto_id, @institutos.collect { |i|[i.nome, i.id] } %>
+</div>
+
+<div class="field">
+  <%= f.label :nome %>
+  <%= f.text_field :nome %>
+</div>
+<div class="field">
+  <%= f.label :sigla %>
+  <%= f.text_field :sigla %>
+</div>
+<div class="field">
+  <%= f.label :ano %>
+  <%= f.text_field :ano %>
+</div>
+<%= f.submit %>
+
+<% end %>

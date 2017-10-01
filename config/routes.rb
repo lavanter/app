@@ -15,4 +15,12 @@ Rails.application.routes.draw do
   get '/periodos/:id', to: 'periodos#show', as: 'periodo'
   patch '/periodos/:id', to: 'periodos#update'
   delete '/periodos/:id', to: 'periodos#destroy', as: 'delete_periodo'
+
+  get '/cursos/new', to: 'cursos#new'
+  get '/cursos/edit/:id', to: 'cursos#edit', as: 'edit_curso'
+  delete '/cursos/delete/:id', to: 'cursos#destroy', as: 'delete_curso'
+  post '/cursos', to: 'cursos#create'
+  patch '/cursos/:id', to: 'cursos#update'
+  get '/cursos/:id', to: 'cursos#show', as: 'curso'
+  get '/cursos', to: 'cursos#index'
 end

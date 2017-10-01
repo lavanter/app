@@ -1,0 +1,9 @@
+<h1>Todos os Cursos</h1>
+<% @institutos.each do |i| %>
+  <h3><%= i.nome %></h3>
+    <ul>
+      <% i.cursos.each do |c| %>
+        <li><%= link_to c.nome, curso_path(c)  %></li>
+      <% end %>
+    </ul>
+<% end %>

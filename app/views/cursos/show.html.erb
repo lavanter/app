@@ -1,0 +1,8 @@
+<h1>Listado o curso <%= @curso.nome %> (<%= @curso.sigla %>)</h1>
+<h2> Instituto: <%= @curso.instituto.nome %></h2>
+<h3>Ano: <%= @curso.ano %></h3>
+<hr>
+<%= link_to 'Editar', edit_curso_path(@curso) %>
+<%= link_to 'Todos', '/cursos' %>
+<%= link_to 'Deletar', delete_curso_path(@curso), method: :delete %>
+
