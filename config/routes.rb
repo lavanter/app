@@ -7,4 +7,12 @@ Rails.application.routes.draw do
   get '/institutos/:id', to: 'institutos#show', as: 'instituto'
   patch 'institutos/:id', to: 'institutos#update'
   delete 'institutos/:id', to: 'institutos#destroy', as: 'delete_instituto'
+
+  get '/periodos', to: 'periodos#index'
+  post '/periodos', to: 'periodos#create'
+  get '/periodos/new', to: 'periodos#new', as: 'new_periodo'
+  get '/periodos/:id/edit', to: 'periodos#edit', as: 'edit_periodo'
+  get '/periodos/:id', to: 'periodos#show', as: 'periodo'
+  patch '/periodos/:id', to: 'periodos#update'
+  delete '/periodos/:id', to: 'periodos#destroy', as: 'delete_periodo'
 end
