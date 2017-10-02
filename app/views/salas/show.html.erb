@@ -1,0 +1,8 @@
+<h1>Sala <%= @sala.nome %></h1>
+<h2><%= @sala.instituto.nome %></h2>
+<div class="content">
+<p>Limite de: <%= @sala.maximo_alunos %></p>
+</div>
+<%= link_to "Editar", edit_sala_path(@sala) %>
+<%= link_to "Todos", "/salas" %>
+<%= link_to "Deletar", edit_sala_path(@sala), method: :destroy %>
