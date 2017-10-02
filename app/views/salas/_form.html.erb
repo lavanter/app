@@ -1,0 +1,16 @@
+<%= form_for (sala) do |f| %>
+  <div class="field">
+    <%= f.label :instituto =%>
+    <%= f.select :instituto_id, @institutos.collect { |i| [i.nome, i.id] } =%>
+  </div>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label "Limite de Alunos" %>
+    <%= f.text_field :maximo_alunos %>
+  </div>
+  <%= f.submit %>
+<% end %>

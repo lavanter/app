@@ -34,4 +34,13 @@ Rails.application.routes.draw do
   get '/materias/new', to: 'materias#new'
   get '/materias/:id', to: 'materias#show', as: 'materia'
   get '/materias', to: 'materias#index'
+
+  patch '/salas/:id', to: 'salas#update'
+  delete 'salas/:id', to: 'salas#destroy', as: 'delete_sala'
+  post '/salas', to: 'salas#create'
+  get '/salas/new', to: 'salas#new'
+  get '/salas/:id/edit', to: 'salas#edit', as: 'edit_sala'
+  get '/salas/:id', to: 'salas#show', as: 'sala'
+  get '/salas', to: 'salas#index'
+  
 end

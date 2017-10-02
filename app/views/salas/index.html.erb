@@ -1,0 +1,7 @@
+<h1>Todas as Salas</h1>
+<ul>
+  <% @salas.each do |s| %>
+    <li><%= link_to s.nome, s %> - Limite: <%= s.maximo_alunos %></li>
+  <% end %>
+</ul>
+<%= link_to "Nova Sala", '/salas/new' %>
