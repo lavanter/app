@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get "/", to: "sites#index"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/institutos', to: 'institutos#index'
   post '/institutos', to: 'institutos#create'
@@ -23,4 +26,13 @@ Rails.application.routes.draw do
   patch '/cursos/:id', to: 'cursos#update'
   get '/cursos/:id', to: 'cursos#show', as: 'curso'
   get '/cursos', to: 'cursos#index'
+
+
+  patch '/materias/:id', to: 'materias#update'
+  delete '/materias/:id', to: 'materias#destroy', as: 'delete_materia'
+  post '/materias', to: 'materias#create'
+  get '/materias/edit/:id', to: 'materias#edit', as: 'edit_materia'
+  get '/materias/new', to: 'materias#new'
+  get '/materias/:id', to: 'materias#show', as: 'materia'
+  get '/materias', to: 'materias#index'
 end

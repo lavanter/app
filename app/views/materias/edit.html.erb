@@ -1,0 +1,4 @@
+<h1>Editando a matéria: <%= @materia.nome %></h1>
+<%= render "form" %>
+<%= link_to "Todas", "/materias"  %>
+<%= link_to "Apagar", delete_materia_path(@materia), method: :delete %>

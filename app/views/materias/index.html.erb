@@ -1,0 +1,8 @@
+<h1>Página das Matérias</h1>
+<div class='content'>
+  <ul>
+    <% @materias.each do |m| %>
+      <li><%= link_to "#{m.nome} (#{m.instituto.sigla})", edit_materia_path(m)%></li>
+    <% end %>
+  </ul>
+</div>
