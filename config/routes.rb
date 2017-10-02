@@ -27,7 +27,6 @@ Rails.application.routes.draw do
   get '/cursos/:id', to: 'cursos#show', as: 'curso'
   get '/cursos', to: 'cursos#index'
 
-
   patch '/materias/:id', to: 'materias#update'
   delete '/materias/:id', to: 'materias#destroy', as: 'delete_materia'
   post '/materias', to: 'materias#create'

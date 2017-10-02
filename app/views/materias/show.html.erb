@@ -1,8 +1,8 @@
 <h1>Materia: <%= @materia.nome %> (<%= @materia.sigla %>)</h1>
 <div class="content">
-<p>Instituto: <%= @materia.instituto.nome %></p>
-<p>Creditos: <%= @materia.creditos %></p>
-<p>Periodo: <%= @materia.periodo %></p>
+  <p>Instituto: <%= @materia.instituto.nome %></p>
+  <p>Creditos: <%= @materia.creditos %></p>
+  <p>Periodo: <%= @materia.periodo %></p>
 </div>
 <%= link_to "Editar", edit_materia_path(@materia) %>
 <%= link_to "Todas", "/materias"  %>
