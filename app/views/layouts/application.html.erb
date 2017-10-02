@@ -9,6 +9,17 @@
   </head>
 
   <body>
+    <div class="nav">
+      <div class="nav navbar">
+        <ul>
+          <%= link_to "Institutos", "/institutos" %>
+          <%= link_to "Cursos", "/cursos" %>
+          <%= link_to "Periodos", "/periodos" %>
+          <%= link_to "Materias", "/materias" %>
+        </ul>
+      </div>
+    </div>
+    <hr/>
     <%= yield %>
   </body>
 </html>
